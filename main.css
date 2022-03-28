@@ -1,0 +1,156 @@
+/* Write your CSS code in this file */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	text-align: center;
+	list-style: none;
+}
+
+body {
+	background-image: url('https://i.ibb.co/rMC74Pd/forest.jpg');
+	color: white;
+	display: flex;
+	flex-direction: column;
+	background-size: 100vw;
+}
+
+h1 {
+	padding: .5em;
+	font-size: 3.2em;
+	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black,
+		1px -1px 0 black, -1px 1px 0 black;
+}
+
+h2 {
+	font-size: 2em;
+	padding: .5em;
+	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black,
+		1px -1px 0 black, -1px 1px 0 black;
+}
+
+p {
+	font-size: 1.5em;
+	padding: .5em;
+	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black,
+		1px -1px 0 black, -1px 1px 0 black;
+}
+
+#guessTracker {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+li {
+	border: 1px solid white;
+	padding: 1.4em;
+	margin: 0 1em;
+	font-size: 1.2em;
+	border-radius: 50%;
+	background: black;
+	color: white;
+}
+
+#guessForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	font-size: 2.6em;
+	border-radius: 50%;
+	border: none;
+	width: 3em;
+	height: 3em;
+	margin: 2em;
+}
+
+#guessButton,
+#resetButton,
+#hintButton {
+	background: #aa33ff;
+	border: none;
+	padding: 1em 4em;
+	color: white;
+	font-size: 1em;
+	margin: 1em;
+}
+
+#guessButton:hover {
+	background: #83c;
+	box-shadow: 1px 1px 18px 1px #81e;
+}
+
+#resetButton {
+	background: #f33;
+}
+
+#resetButton:hover {
+	background: #c22;
+	box-shadow: 1px 1px 18px 1px #f00;
+}
+
+#guessButton:active {
+	background: #509;
+}
+
+#resetButton:active {
+	background: #722;
+}
+
+#hintButton {
+	background: #ff0;
+	color: black;
+}
+
+#hintButton:hover {
+	background: #bb0;
+	box-shadow: 1px 1px 8px 1px #ff5;
+}
+
+#hintButton:active {
+	background: #990;
+}
+
+#squirrelImg {
+	position: fixed;
+	left: 5vw;
+	bottom: 5vh;
+	height: 10vw;
+}
+
+#buttons {
+	display: flex;
+}
+
+@media screen and (max-width: 1280px) {
+	#guessTracker {
+		margin: .5em;
+	}
+
+	input {
+		font-size: 2.3em;
+		border-radius: 50%;
+		width: 3em;
+		height: 3em;
+		margin: .5em;
+	}
+
+	h1 {
+		padding: .25em;
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		padding: .3em;
+	}
+
+	p {
+		font-size: 1.5em;
+		padding: .5em;
+	}
+}
